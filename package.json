@@ -1,0 +1,35 @@
+{
+  "name": "telegram-cli-bot",
+  "version": "1.0.0",
+  "description": "CLI tool for Telegram bot integration",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "telegram-cli-bot": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "cli",
+    "notification"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.0.1",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@telegraf/types": "^8.3.1",
+    "@types/node": "^24.0.10",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
